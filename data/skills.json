@@ -1,0 +1,84 @@
+{
+  "skills": [
+    {
+      "name": "Java",
+      "category": "backend",
+      "proficiency": 85,
+      "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+      "brandColor": "#ED8B00",
+      "description": "Object-oriented programming language"
+    },
+    {
+      "name": "Python",
+      "category": "backend",
+      "proficiency": 90,
+      "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      "brandColor": "#3776AB",
+      "description": "High-level programming language"
+    },
+    {
+      "name": "MySQL",
+      "category": "database",
+      "proficiency": 80,
+      "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+      "brandColor": "#4479A1",
+      "description": "Relational database management"
+    },
+    {
+      "name": "React",
+      "category": "frontend",
+      "proficiency": 88,
+      "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "brandColor": "#61DAFB",
+      "description": "JavaScript library for building UIs"
+    },
+    {
+      "name": "Node.js",
+      "category": "backend",
+      "proficiency": 85,
+      "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+      "brandColor": "#339933",
+      "description": "JavaScript runtime for servers"
+    },
+    {
+      "name": "TypeScript",
+      "category": "frontend",
+      "proficiency": 82,
+      "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+      "brandColor": "#3178C6",
+      "description": "Typed superset of JavaScript"
+    },
+    {
+      "name": "MongoDB",
+      "category": "database",
+      "proficiency": 78,
+      "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+      "brandColor": "#47A248",
+      "description": "NoSQL document database"
+    },
+    {
+      "name": "Git",
+      "category": "devops",
+      "proficiency": 85,
+      "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+      "brandColor": "#F05032",
+      "description": "Version control system"
+    },
+    {
+      "name": "Docker",
+      "category": "devops",
+      "proficiency": 75,
+      "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+      "brandColor": "#2496ED",
+      "description": "Containerization platform"
+    },
+    {
+      "name": "Next.js",
+      "category": "frontend",
+      "proficiency": 80,
+      "logoUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+      "brandColor": "#000000",
+      "description": "React framework for production"
+    }
+  ]
+}

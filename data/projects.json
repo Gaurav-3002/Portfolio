@@ -1,0 +1,44 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Crop & Fertilizer Recommendation System",
+      "description": "A machine learning-based system that recommends optimal crops and fertilizers based on soil conditions, weather patterns, and geographical data for maximizing agricultural yield.",
+      "image": "https://images.unsplash.com/photo-1574943320219-553eb213f72d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2064&q=80",
+      "technologies": ["Python", "Flask", "Scikit-learn", "Pandas"],
+      "liveUrl": "https://crop-recommendation-demo.vercel.app",
+      "githubUrl": "https://github.com/gauravkumar/crop-fertilizer-recommendation",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Weather Prediction System",
+      "description": "An advanced weather forecasting system using machine learning to predict temperature, humidity, and precipitation patterns with high accuracy.",
+      "image": "https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+      "technologies": ["Python", "Scikit-learn", "Matplotlib", "Seaborn"],
+      "liveUrl": "https://weather-prediction-ml.netlify.app",
+      "githubUrl": "https://github.com/gauravkumar/weather-prediction-system",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Dynamic Portfolio Website",
+      "description": "A modern, responsive portfolio website showcasing projects and skills. Features smooth animations, dynamic content loading, and interactive 3D elements.",
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2015&q=80",
+      "technologies": ["Next.js", "TypeScript", "Three.js", "Rive"],
+      "liveUrl": "https://gaurav-portfolio.vercel.app",
+      "githubUrl": "https://github.com/gauravkumar/portfolio-website",
+      "featured": true
+    },
+    {
+      "id": 4,
+      "title": "Task Management System",
+      "description": "A collaborative task management application with real-time updates, team collaboration features, progress tracking, and automated notifications.",
+      "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+      "technologies": ["React", "Node.js", "MongoDB", "Socket.io"],
+      "liveUrl": "https://task-manager-pro.herokuapp.com",
+      "githubUrl": "https://github.com/gauravkumar/task-management-system",
+      "featured": false
+    }
+  ]
+}

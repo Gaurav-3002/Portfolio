@@ -1,0 +1,52 @@
+{
+  "certifications": [
+    {
+      "id": 1,
+      "title": "Python Complete Course and Flask Framework",
+      "description": "Comprehensive training in Python programming and web development with Flask framework.",
+      "platform": "Udemy",
+      "platformLogo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/udemy/udemy-original.svg",
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      "year": "2023",
+      "skills": ["Python", "Flask", "Web Dev"],
+      "certificateUrl": "https://www.udemy.com/certificate/UC-python-flask-2023",
+      "brandColor": "#3776AB"
+    },
+    {
+      "id": 2,
+      "title": "Git & GitHub Mastery",
+      "description": "Advanced version control with Git and collaborative development using GitHub.",
+      "platform": "Udemy",
+      "platformLogo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/udemy/udemy-original.svg",
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+      "year": "2023",
+      "skills": ["Git", "GitHub", "Markdown"],
+      "certificateUrl": "https://www.udemy.com/certificate/UC-git-github-2023",
+      "brandColor": "#F05032"
+    },
+    {
+      "id": 3,
+      "title": "Postman API Expert",
+      "description": "API testing and development fundamentals using Postman platform.",
+      "platform": "Postman",
+      "platformLogo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
+      "year": "2023",
+      "skills": ["API", "Testing", "Postman"],
+      "certificateUrl": "https://academy.postman.com/certificate/postman-api-expert",
+      "brandColor": "#FF6C37"
+    },
+    {
+      "id": 4,
+      "title": "GSSOC Contributor",
+      "description": "Active contributor in Girl Script Summer of Code Extended program.",
+      "platform": "GSSOC",
+      "platformLogo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+      "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+      "year": "2023",
+      "skills": ["Open Source", "Collaboration", "Git"],
+      "certificateUrl": "https://gssoc.girlscript.tech/certificate/gssoc-2023",
+      "brandColor": "#24292e"
+    }
+  ]
+}
