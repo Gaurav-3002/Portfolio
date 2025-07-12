@@ -99,7 +99,7 @@ const ChatBubble = () => {
     // Use the Next.js API route instead of direct AI server connection
     const chatApiUrl = '/api/chat'
     
-    const response = await fetch(`${chatApiUrl}/api/chat`, {
+    const response = await fetch(chatApiUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
