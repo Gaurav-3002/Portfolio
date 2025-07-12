@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST='{"app/page.tsx -> @/components/AnimatedBackground":{"id":6828,"files":["static/chunks/828.6d23be6acd9331ff.js"]}}';
