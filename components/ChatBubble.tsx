@@ -85,7 +85,7 @@ const ChatBubble = () => {
       console.error('Error sending message:', error)
       const errorMessage: Message = {
         id: 'error_' + Date.now(),
-        content: "I'm sorry, I encountered an error. Please try again. Make sure the AI service is running on http://localhost:5001",
+        content: "I'm sorry, I encountered an error. Please try again later.",
         sender: 'ai',
         timestamp: new Date()
       }
