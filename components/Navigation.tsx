@@ -110,7 +110,7 @@ const Navigation = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="fixed top-6 z-40"
+            className="fixed top-20 z-40"
             style={{
               left: '50%',
               x: '-50%'  // Framer Motion's x transform
