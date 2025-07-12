@@ -55,32 +55,61 @@ A modern, responsive portfolio website featuring an integrated AI chatbot assist
 ## 📁 Project Structure
 
 ```
-/
-├── app/                          # Next.js app directory
-│   ├── layout.tsx               # Root layout with ChatBubble
-│   ├── page.tsx                 # Homepage
-│   └── globals.css              # Global styles
-├── components/                   # React components
-│   ├── ChatBubble.tsx           # AI Assistant Chat Interface
-│   ├── Navigation.tsx           # Portfolio navigation
-│   ├── ProfileIntro.tsx         # Hero section
-│   ├── ContactSection.tsx       # Contact form
-│   └── ...                      # Other portfolio components
-├── data/                        # JSON data files
-│   ├── projects.json            # Project information
-│   ├── skills.json              # Skills and technologies
-│   └── certifications.json     # Certifications
-├── ai-server/                   # AI Service (Docker)
-│   ├── server.py               # Flask API server
+/app/
+├── backend/                     # Flask AI Service
+│   ├── server.py               # Main Flask application
 │   ├── requirements.txt        # Python dependencies
-│   ├── Dockerfile              # Docker configuration
-│   ├── docker-compose.yml      # Docker Compose setup
-│   └── README.md               # AI service documentation
-├── public/                      # Static assets
-├── package.json                # Node.js dependencies
-├── tailwind.config.ts          # Tailwind configuration
-├── .env.local                  # Environment variables
-└── README.md                   # This file
+│   ├── Dockerfile             # Container configuration
+│   └── backend_test.py        # API testing utilities
+│
+├── frontend/                   # Next.js Application
+│   ├── app/                   # Next.js App Router
+│   │   ├── layout.tsx         # Root layout with AI chat
+│   │   ├── page.tsx           # Homepage sections
+│   │   ├── globals.css        # Global styles & animations
+│   │   └── api/chat/          # API route for AI communication
+│   │
+│   ├── components/            # React Components
+│   │   ├── ChatBubble.tsx     # AI Assistant Interface
+│   │   ├── Navigation.tsx     # Portfolio navigation
+│   │   ├── ProfileIntro.tsx   # Hero section
+│   │   ├── AboutSection.tsx   # About & highlights
+│   │   ├── ProjectsSection.tsx # Project showcase
+│   │   ├── SkillsSection.tsx  # Skills matrix
+│   │   ├── CertificationsSection.tsx # Achievements
+│   │   ├── ContactSection.tsx # Contact form
+│   │   ├── Footer.tsx         # Footer section
+│   │   ├── AnimatedBackground.tsx # 3D particle system
+│   │   └── ErrorBoundary.tsx  # Error handling
+│   │
+│   ├── data/                  # JSON Data Files
+│   │   ├── projects.json      # Project information
+│   │   ├── skills.json        # Technical skills
+│   │   └── certifications.json # Professional certifications
+│   │
+│   ├── public/                # Static Assets
+│   │   ├── Self.jpg           # Profile image
+│   │   ├── Resume.pdf         # Downloadable resume
+│   │   └── humanoid.png       # 3D avatar image
+│   │
+│   └── Configuration Files
+│       ├── package.json       # Dependencies & scripts
+│       ├── tailwind.config.ts # Tailwind customization
+│       ├── tsconfig.json      # TypeScript configuration
+│       └── next.config.js     # Next.js configuration
+│
+├── shared/                    # Shared Resources
+│   ├── images/               # Common images
+│   ├── scripts/              # Utility scripts
+│   │   └── add-skill.js      # Dynamic skill management
+│   └── error-log.js          # Error logging utilities
+│
+├── docs/                     # Documentation
+│   ├── README.md            # This comprehensive guide
+│   ├── INTEGRATION_GUIDE.md # AI integration tutorial
+│   └── STATUS_REPORT.md     # Current system status
+│
+└── test_result.md           # Testing documentation
 ```
 
 ## 🚀 Quick Start
