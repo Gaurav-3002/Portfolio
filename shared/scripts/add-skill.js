@@ -64,7 +64,7 @@ async function addSkill() {
     const brandColor = await question(colorize('🎨 Brand color (hex, optional): ', 'yellow')) || generateBrandColor(category)
 
     // Load existing skills
-    const skillsPath = path.join(__dirname, '../data/skills.json')
+    const skillsPath = path.join(__dirname, '../../frontend/data/skills.json')
     let skillsData = { skills: [] }
     
     if (fs.existsSync(skillsPath)) {
