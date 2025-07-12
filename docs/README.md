@@ -259,55 +259,53 @@ Edit `backend/server.py` in the `AI_RESPONSES` dictionary.
 
 ## 🚀 Deployment
 
-### Frontend (Vercel/Netlify)
+### **Frontend Deployment (Vercel/Netlify)**
 1. Connect GitHub repository
-2. Set environment variables
-3. Deploy automatically
+2. Set build command: `npm run build`
+3. Set publish directory: `.next`
+4. Deploy automatically
 
-### AI Service (Any Docker Host)
-1. Build Docker image
-2. Push to container registry
-3. Deploy with 6GB+ memory allocation
-
-### Production Considerations
-- Use production WSGI server (gunicorn) for Flask
-- Set up proper CORS policies
-- Configure SSL/HTTPS
-- Monitor memory usage for AI service
-- Set up health checks
-
-## 🔍 Troubleshooting
-
-### Common Issues
-
-#### Chat Not Responding
-1. Check AI service status: `curl http://localhost:5001/api/health`
-2. Verify Docker container: `docker ps`
-3. Check logs: `docker-compose logs`
-
-#### Model Download Issues
+### **Backend Deployment (Docker)**
 ```bash
-# Manual model download
-mkdir -p ai-server/models
-wget -O ai-server/models/gpt4all-lora-quantized.bin \
-  https://the-eye.eu/public/AI/models/nomic-ai/gpt4all/gpt4all-lora-quantized.bin
+cd backend
+docker build -t portfolio-ai .
+docker run -p 8001:8001 portfolio-ai
 ```
 
-#### Memory Issues
-- Ensure Docker has 6GB+ memory allocated
-- Close other memory-intensive applications
-- Consider using a smaller model if needed
+### **Production Considerations**
+- Use environment variables for configuration
+- Implement proper CORS policies
+- Set up SSL/HTTPS
+- Monitor AI service memory usage
+- Configure health checks
 
-#### CORS Issues
-- Verify CORS is enabled in Flask server
-- Check browser console for CORS errors
-- Ensure correct API URL in environment variables
+## 📱 Browser Support
 
-### Performance Optimization
-- Enable production build: `npm run build`
-- Optimize Docker image size
-- Use CDN for static assets
-- Enable gzip compression
+- **Chrome** 90+
+- **Firefox** 88+
+- **Safari** 14+
+- **Edge** 90+
+- **Mobile browsers** (iOS Safari, Chrome Mobile)
+
+## 🔍 Testing
+
+### **Manual Testing**
+- All portfolio sections load correctly
+- AI chat functionality works
+- Email drafting feature functions
+- Responsive design on all devices
+- Dark/light mode switching
+
+### **API Testing**
+```bash
+# Test AI health
+curl http://localhost:8001/api/health
+
+# Test chat functionality
+curl -X POST http://localhost:8001/api/chat \
+  -H "Content-Type: application/json" \
+  -d '{"question": "Tell me about Gaurav", "sessionId": "test"}'
+```
 
 ## 📝 License
 
