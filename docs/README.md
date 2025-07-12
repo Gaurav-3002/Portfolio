@@ -181,53 +181,40 @@ POST http://localhost:8001/api/chat
 GET http://localhost:8001/api/health
 ```
 
-## 🐳 Docker Deployment
+## 📊 Portfolio Content
 
-### Build AI Service
-```bash
-cd ai-server
-docker build -t gpt4all-server .
-```
+### **Featured Projects**
+1. **Crop & Fertilizer Recommendation System** - ML-based agricultural optimization
+2. **Weather Prediction System** - Advanced forecasting with machine learning
+3. **Dynamic Portfolio Website** - This AI-powered portfolio
+4. **Task Management System** - Collaborative project management platform
 
-### Run with Docker Compose
-```bash
-cd ai-server
-docker-compose up -d
-```
+### **Technical Skills**
+- **Frontend**: React, Next.js, TypeScript, Tailwind CSS
+- **Backend**: Python, Java, Node.js, Flask
+- **Databases**: MongoDB, MySQL
+- **DevOps**: Docker, Git, GitHub
+- **Specialties**: Machine Learning, Full-stack Development
 
-### Manual Docker Run
-```bash
-docker run -d \
-  -p 5001:5001 \
-  -v "$(pwd)/models:/app/models" \
-  --memory="6g" \
-  --name gpt4all-server \
-  gpt4all-server
-```
+### **Certifications**
+- Python Complete Course and Flask Framework (Udemy)
+- Git & GitHub Mastery (Udemy)  
+- Postman API Expert (Postman Academy)
+- GSSOC Contributor (Girl Script Summer of Code)
 
-## 🔧 Development
+## 🎨 Design Features
 
-### Available Scripts
+### **Visual Elements**
+- **Color Scheme**: Blue-purple gradient theme (#4f46e5 to #8b5cf6)
+- **Typography**: Inter + Space Grotesk font pairing
+- **Animations**: Framer Motion powered transitions
+- **Effects**: Glass morphism, hover animations, particle systems
 
-#### Frontend
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run start` - Start production server
-- `npm run lint` - Run ESLint
-
-#### AI Service
-- `python server.py` - Start Flask development server
-- `docker-compose up` - Start with Docker
-- `docker-compose logs` - View logs
-
-### Environment Variables
-
-#### Frontend (.env.local)
-- `NEXT_PUBLIC_CHAT_API_URL` - AI service URL (default: http://localhost:5001)
-
-#### AI Service
-- `MODEL_URL` - Custom model download URL (optional)
-- `PYTHONUNBUFFERED` - Python logging (Docker)
+### **Interactive Components**
+- **Skill Cards**: Rotating cards with proficiency bars
+- **Project Overlays**: Hover effects with action buttons
+- **Particle System**: Mouse-interactive background animation
+- **Navigation**: Smooth scrolling with active indicators
 
 ## 🎨 Customization
 
