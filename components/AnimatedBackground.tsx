@@ -96,7 +96,7 @@ const AnimatedBackground = () => {
           const dy = particle.y - otherParticle.y
           const distance = Math.sqrt(dx * dx + dy * dy)
           
-          if (distance < 100) {
+          if (distance < 110) { // Increased for density
             ctx.beginPath()
             ctx.moveTo(particle.x, particle.y)
             ctx.lineTo(otherParticle.x, otherParticle.y)
