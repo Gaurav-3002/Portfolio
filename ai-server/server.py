@@ -56,9 +56,9 @@ AI_RESPONSES = {
 def get_contextual_response(question_lower, original_question):
     """Get a contextual response based on keywords in the question"""
     
-    # Email handling
-    if 'email:' in question_lower:
-        return "I'll help you draft that email. Please provide the subject and body separated by '|', and I'll format it properly."
+    # Email handling - process actual email drafting
+    if original_question.lower().startswith('email:'):
+        return process_email_request(original_question)
     
     # Skills-related keywords
     if any(keyword in question_lower for keyword in ['skill', 'technology', 'tech', 'programming', 'language', 'framework', 'python', 'java', 'react', 'next']):
