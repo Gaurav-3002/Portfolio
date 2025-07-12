@@ -148,7 +148,7 @@ def chat():
         
         # Get contextual response
         question_lower = question.lower()
-        response = get_contextual_response(question_lower)
+        response = get_contextual_response(question_lower, question)
         
         logger.info(f"Generated response: {response[:50]}...")
         
