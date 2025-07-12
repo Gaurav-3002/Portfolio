@@ -112,53 +112,53 @@ A modern, responsive portfolio website featuring an integrated AI chatbot assist
 └── test_result.md           # Testing documentation
 ```
 
-## 🚀 Quick Start
+## 🚀 Quick Start Guide
 
 ### Prerequisites
-- **Node.js** 18+ and npm/yarn
-- **Docker** (for AI service)
-- **Python 3.10** (if running AI service locally)
+- **Node.js 18+** and npm/yarn
+- **Python 3.10+** for AI service
+- **Git** for version control
+- **6GB+ RAM** recommended for AI service
 
-### 1. Install Dependencies
-
+### 1. Clone & Install
 ```bash
-# Install Node.js dependencies
+# Clone repository
+git clone <repository-url>
+cd portfolio-project
+
+# Install frontend dependencies
+cd frontend
 npm install
-# or
-yarn install
+
+# Install backend dependencies
+cd ../backend
+pip install -r requirements.txt
 ```
 
 ### 2. Environment Setup
+```bash
+# Frontend environment (if needed)
+cd frontend
+echo "REACT_APP_BACKEND_URL=http://localhost:8001" > .env
 
-Create `.env.local` file:
-```env
-NEXT_PUBLIC_CHAT_API_URL=http://localhost:5001
+# Backend runs on port 8001 by default
 ```
 
-### 3. Start AI Service
-
-#### Option A: Using Docker (Recommended)
+### 3. Start Services
 ```bash
-cd ai-server
-docker-compose up -d
-```
-
-#### Option B: Local Development
-```bash
-cd ai-server
-pip install -r requirements.txt
+# Start AI Backend (Terminal 1)
+cd backend
 python server.py
-```
 
-### 4. Start Frontend
-
-```bash
+# Start Frontend (Terminal 2)
+cd frontend
 npm run dev
-# or
-yarn dev
 ```
 
-Visit [http://localhost:3000](http://localhost:3000) to see the portfolio!
+### 4. Access Application
+- **Portfolio**: http://localhost:3000
+- **AI Service**: http://localhost:8001
+- **Health Check**: http://localhost:8001/api/health
 
 ## 🤖 AI Assistant Usage
 
