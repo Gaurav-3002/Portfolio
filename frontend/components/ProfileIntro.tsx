@@ -27,7 +27,7 @@ const ProfileIntro = () => {
 
   const handleDownloadCV = () => {
     const link = document.createElement('a')
-    link.href = '/resume.pdf'
+    link.href = '/Resume.pdf'
     link.download = 'Gaurav_Resume.pdf'
     link.click()
   }
