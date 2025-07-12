@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
-import skillsData from '@/data/skills.json'
+import skillsData from '../data/skills.json'
 
 interface Skill {
   name: string
