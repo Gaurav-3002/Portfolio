@@ -307,22 +307,57 @@ curl -X POST http://localhost:8001/api/chat \
   -d '{"question": "Tell me about Gaurav", "sessionId": "test"}'
 ```
 
+## 🎯 Performance
+
+### **Optimization Features**
+- **Code Splitting**: Dynamic imports for heavy components
+- **Image Optimization**: Next.js automatic image optimization
+- **Bundle Analysis**: Built-in bundle analyzer
+- **Lazy Loading**: Deferred loading of non-critical components
+- **Caching**: Efficient caching strategies
+
+### **Core Web Vitals**
+- **LCP**: Optimized with image preloading
+- **FID**: Minimized with efficient event handlers
+- **CLS**: Prevented with proper sizing
+
+## 🔒 Security
+
+- **Input Validation**: Sanitized user inputs
+- **CORS Configuration**: Proper cross-origin policies
+- **Error Handling**: Secure error messages
+- **Rate Limiting**: API request limiting (production)
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit changes (`git commit -m 'Add amazing feature'`)
+4. Push to branch (`git push origin feature/amazing-feature`)
+5. Open Pull Request
+
 ## 📝 License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
 ## 📧 Contact
 
-- **Email**: gauravkrbkj@gmail.com
-- **GitHub**: [Gaurav-3002](https://github.com/Gaurav-3002)
-- **Portfolio**: [Live Demo](https://gaurav-portfolio.vercel.app)
+**Gaurav Kumar**
+- **Email**: gauravkrbkj121@gmail.com
+- **Location**: Bhubaneswar, India
+- **University**: KIIT University
+- **GitHub**: Check repository for latest code
 
 ---
 
-**Built with ❤️ by Gaurav Kumar**
+## 🏆 Achievements
 
-*This portfolio showcases modern web development practices with AI integration, demonstrating full-stack capabilities and innovative technology usage.*
+This portfolio demonstrates:
+- **Modern Web Development**: Latest Next.js 15 with TypeScript
+- **AI Integration**: Self-hosted chatbot with contextual responses
+- **Advanced Animations**: Framer Motion and Three.js implementation
+- **Professional Design**: Industry-standard UI/UX practices
+- **Full-stack Capabilities**: Frontend + Backend + AI integration
+- **Production Ready**: Docker deployment and monitoring
+
+**Built with ❤️ by Gaurav Kumar** | *Showcasing the future of web development*
