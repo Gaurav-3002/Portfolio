@@ -40,7 +40,7 @@ const AnimatedBackground = () => {
         vx: (Math.random() - 0.5) * 0.8,
         vy: (Math.random() - 0.5) * 0.8,
         size: Math.random() * 4 + 1,
-        alpha: Math.random() * 0.6 + 0.2,
+        alpha: Math.random() * 0.7 + 0.3, // Slightly higher alpha for visibility
         color: Math.random() > 0.5 ? '#6366f1' : '#8b5cf6'
       })
     }
