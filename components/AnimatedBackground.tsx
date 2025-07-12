@@ -101,7 +101,7 @@ const AnimatedBackground = () => {
             ctx.moveTo(particle.x, particle.y)
             ctx.lineTo(otherParticle.x, otherParticle.y)
             ctx.strokeStyle = `rgba(99, 102, 241, ${0.25 * (1 - distance / 110)})` // Darker
-            ctx.lineWidth = 0.5
+            ctx.lineWidth = 0.6 // Thicker
             ctx.stroke()
           }
         })
