@@ -32,7 +32,7 @@ const AnimatedBackground = () => {
       color: string
     }> = []
 
-    // Create particles
+    // Create particles - 10% more for density
     for (let i = 0; i < 150; i++) {
       particles.push({
         x: Math.random() * canvas.width,
