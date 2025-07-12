@@ -37,12 +37,12 @@ const ProfileIntro = () => {
       <div className="flex flex-col md:flex-row-reverse items-center gap-10 w-full max-w-4xl mx-auto">
         {/* Profile Pic & Socials */}
         <div className="flex flex-col items-center md:w-1/3 relative">
-          <div className="w-80 h-80 bg-gradient-to-tr from-blue-500 to-purple-500 flex items-center justify-center shadow-2xl" style={{ clipPath: 'polygon(50% 0%, 93% 22%, 93% 78%, 50% 100%, 7% 78%, 7% 22%)', borderRadius: '2.5rem' }}>
+          <div className="w-80 h-80 bg-gradient-to-tr from-blue-500 to-purple-500 flex items-center justify-center shadow-2xl" style={{ clipPath: 'polygon(50% 0%, 90% 20%, 90% 80%, 50% 100%, 10% 80%, 10% 20%)', borderRadius: '3rem' }}>
             <img
               src="/Self.jpg"
               alt="Gaurav Kumar - Profile"
               className="w-full h-full object-cover"
-              style={{ clipPath: 'polygon(50% 0%, 93% 22%, 93% 78%, 50% 100%, 7% 78%, 7% 22%)', borderRadius: 0, border: 'none', objectPosition: 'center 60%' }}
+              style={{ clipPath: 'polygon(50% 0%, 90% 20%, 90% 80%, 50% 100%, 10% 80%, 10% 20%)', borderRadius: '3rem', border: 'none', objectPosition: 'center 60%' }}
             />
           </div>
           {/* Social Buttons - vertical, aligned right of hexagon */}
