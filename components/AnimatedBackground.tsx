@@ -90,7 +90,7 @@ const AnimatedBackground = () => {
         ctx.fillStyle = particle.color + Math.floor(particle.alpha * 255).toString(16).padStart(2, '0')
         ctx.fill()
 
-        // Draw connections
+        // Draw connections - denser and darker
         particles.slice(index + 1).forEach(otherParticle => {
           const dx = particle.x - otherParticle.x
           const dy = particle.y - otherParticle.y
