@@ -83,6 +83,34 @@ def get_contextual_response(question_lower, original_question):
     # Default response
     return random.choice(AI_RESPONSES['default'])
 
+def process_email_request(email_request):
+    """Process email drafting request"""
+    try:
+        # Parse email request (format: "email: subject | body")
+        email_content = email_request[6:].strip()  # Remove "email:"
+        parts = email_content.split('|')
+        
+        if len(parts) != 2:
+            return "Please format your email request as: 'email: subject | body'"
+        
+        subject = parts[0].strip()
+        body = parts[1].strip()
+        
+        if not subject or not body:
+            return "Please provide both subject and body for the email request."
+        
+        # Format the email response
+        return f"""Email drafted successfully! 📧
+
+**Subject:** {subject}
+
+**Body:** {body}
+
+The email has been formatted and is ready to send to Gaurav Kumar at gauravkrbkj@gmail.com"""
+        
+    except Exception as e:
+        return "Sorry, there was an error processing your email request. Please try again with format: 'email: subject | body'"
+
 @app.route("/api/chat", methods=["POST", "OPTIONS"])
 def chat():
     # Handle preflight requests
