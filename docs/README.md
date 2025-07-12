@@ -162,35 +162,23 @@ npm run dev
 
 ## 🤖 AI Assistant Usage
 
-### Chat Features
-1. **General Questions**: Ask about Gaurav's skills, projects, or experience
-   ```
-   "Tell me about Gaurav's skills"
-   "What projects has he worked on?"
-   "What is his experience with React?"
-   ```
+### **Chat Commands**
+- **General Questions**: "Tell me about Gaurav's skills"
+- **Project Inquiry**: "What projects has he worked on?"
+- **Experience**: "What is his background?"
+- **Email Drafting**: "email: Subject | Message body"
 
-2. **Email Drafting**: Use the `email:` prefix to draft emails
-   ```
-   "email: Meeting Request | Hi Gaurav, I'd like to schedule a meeting to discuss a potential project."
-   ```
-
-### AI Service API
-
-#### Chat Endpoint
+### **API Endpoints**
 ```bash
-POST http://localhost:5001/api/chat
-Content-Type: application/json
-
+# Chat with AI
+POST http://localhost:8001/api/chat
 {
   "question": "Tell me about Gaurav's skills",
-  "sessionId": "uuid-string"
+  "sessionId": "optional-session-id"
 }
-```
 
-#### Health Check
-```bash
-GET http://localhost:5001/api/health
+# Health Check
+GET http://localhost:8001/api/health
 ```
 
 ## 🐳 Docker Deployment
