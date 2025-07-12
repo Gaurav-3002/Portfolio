@@ -53,7 +53,7 @@ AI_RESPONSES = {
     ]
 }
 
-def get_contextual_response(question_lower):
+def get_contextual_response(question_lower, original_question):
     """Get a contextual response based on keywords in the question"""
     
     # Email handling
