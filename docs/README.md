@@ -216,31 +216,46 @@ GET http://localhost:8001/api/health
 - **Particle System**: Mouse-interactive background animation
 - **Navigation**: Smooth scrolling with active indicators
 
-## 🎨 Customization
+## 🔧 Development
 
-### Adding New Chat Responses
-Edit `/ai-server/server.py` to add new keyword-based responses:
+### **Available Scripts**
 
-```python
-if 'your_keyword' in question_lower:
-    response = "Your custom response here"
+#### Frontend
+```bash
+npm run dev      # Development server
+npm run build    # Production build
+npm run start    # Production server
+npm run lint     # Code linting
+npm run type-check # TypeScript validation
 ```
 
-### Styling the Chat Bubble
-Modify `/components/ChatBubble.tsx` for custom styling:
-
-```tsx
-// Change chat bubble position
-className="fixed bottom-8 right-8"
-
-// Modify chat window size
-style={{ maxWidth: '320px', maxHeight: '480px' }}
+#### Backend
+```bash
+python server.py # Start Flask development server
 ```
 
-### Adding New Portfolio Sections
-1. Create component in `/components/`
-2. Add to `/app/page.tsx`
-3. Update navigation in `/components/Navigation.tsx`
+### **Adding New Content**
+
+#### Add New Skill
+```bash
+cd shared/scripts
+node add-skill.js
+```
+
+#### Update Projects
+Edit `frontend/data/projects.json`:
+```json
+{
+  "id": 5,
+  "title": "New Project",
+  "description": "Project description",
+  "technologies": ["React", "Node.js"],
+  "featured": true
+}
+```
+
+#### Modify AI Responses
+Edit `backend/server.py` in the `AI_RESPONSES` dictionary.
 
 ## 🚀 Deployment
 
