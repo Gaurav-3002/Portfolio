@@ -82,21 +82,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const socialLinks = [
-    { icon: 'github', url: 'https://github.com/gauravkumar', label: 'GitHub' },
-    { icon: 'linkedin', url: 'https://www.linkedin.com/in/gauravkumar', label: 'LinkedIn' },
-    { icon: 'twitter', url: 'https://twitter.com/gauravkumar', label: 'Twitter' },
-  ]
-
   return (
     <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
       <body className="antialiased text-slate-900 dark:text-slate-100">
         {children}
-        <ProfileWidget 
-          imageUrl="/Self.jpg"
-          cvUrl="/resume.pdf"
-          socials={socialLinks}
-        />
         <ChatBubble />
       </body>
     </html>
