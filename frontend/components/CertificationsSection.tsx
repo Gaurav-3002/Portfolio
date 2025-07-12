@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { ExternalLink, Calendar, Award, Users } from 'lucide-react'
 import Image from 'next/image'
-import certificationsData from '@/data/certifications.json'
+import certificationsData from '../data/certifications.json'
 
 interface Certification {
   id: number
