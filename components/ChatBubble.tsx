@@ -96,7 +96,8 @@ const ChatBubble = () => {
   }
 
   const handleChatRequest = async (question: string) => {
-    const chatApiUrl = process.env.NEXT_PUBLIC_CHAT_API_URL || 'http://localhost:5001'
+    // Use the Next.js API route instead of direct AI server connection
+    const chatApiUrl = '/api/chat'
     
     const response = await fetch(`${chatApiUrl}/api/chat`, {
       method: 'POST',
